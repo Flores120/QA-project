@@ -5,6 +5,9 @@ header {
   background-color: #84aff4;
   padding: 25px;
 }
+footer {
+  text-align: center;
+}
 .newQ {
   height: 100px;
   background: lightgray;
@@ -17,4 +20,19 @@ header {
   border: none;
   padding: 4px 4px;
   background-color: #5cd688;
+}
+.details {
+  /*border-top: 1px solid gray;*/
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.deleteB {
+  position: relative; left: 75%; bottom: 10%;
+  width: 20%;
+  height: 121px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #e56767;
 }

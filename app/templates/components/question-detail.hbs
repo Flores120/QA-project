@@ -1,4 +1,6 @@
-<strong>{{question.question}}</strong>
-<br>
-<em>{{question.questionDetails}}</em>
-<button {{action 'deleteQuestion' question}}>Delete</button> 
+<strong>{{question.questionName}}</strong>
+<hr>
+<div class="details">
+  <em>{{question.questionDetails}}</em>
+</div>
+<button class="deleteB"{{action 'deleteQuestion' question}}>Delete</button>
