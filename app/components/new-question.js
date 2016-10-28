@@ -9,7 +9,8 @@ export default Ember.Component.extend({
       postQuestion(){
         var params = {
           author: this.get('author'),
-          question: this.get('question')
+          question: this.get('question'),
+          questionDetails: this.get('questionDetails')
         };
         this.set('addNewQuestion', false);
         this.sendAction('postQuestion', params);
