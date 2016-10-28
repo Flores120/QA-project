@@ -1,6 +1,12 @@
+<div class="jumbotron">
+{{new-question postQuestion="postQuestion"}}
+</div>
 {{#each model as |question|}}
+{{update-question question=question update="update"}}
   <h1>Question:{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}-{{question.author}}</h1>
-  
+
   {{delete-question question=question deleteQuestion="deleteQuestion"}}
 {{/each}}
-{{new-question postQuestion="postQuestion"}}
+
+<!-- {{update-question question=question update="update"}} -->
+<!-- {{new-question postQuestion="postQuestion"}} -->
