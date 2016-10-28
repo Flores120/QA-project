@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return this.store.findAll('question');
+    return Ember.RSVP.hash({
+    questions: this.store.findAll('question'),
+    answers: this.store.findAll('answer')
+  });
   },
   actions:{
     postQuestion(params){
@@ -19,6 +22,7 @@ export default Ember.Route.extend({
         question.save();
         this.transitionTo('index');
       },
+    
       deleteQuestion(question) {
         question.destroyRecord();
         this.transitionTo('index');

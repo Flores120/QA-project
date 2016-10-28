@@ -4,3 +4,10 @@
   <em>{{question.questionDetails}}</em>
 </div>
 <button class="deleteB"{{action 'deleteQuestion' question}}>Delete</button>
+
+ <h3>Comments</h3>
+ <ul>
+   {{#each question.answers as |answer|}}
+  <li>{{answer-tile answer="answer"}}</li>
+  {{/each}}
+</ul>

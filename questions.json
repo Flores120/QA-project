@@ -2,5 +2,13 @@
   "author": "Angel",
   "questionName": "how much does a dog cost?",
   "questionDetails": "I wanna buy a dog but i diont know what the cost to own a dog"
-}]
+}, {
+  "author": "Chris",
+  "questionName": "are there bars in hawaii",
+  "questionDetails": "I wanna buy a dog but i diont know what the cost to own a dog"
+}],
+  "answers": [{
+    "author": "Gene",
+    "content": "dogs can be very expensive"
+    }]
 }

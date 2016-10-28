@@ -2,9 +2,8 @@
 {{new-question postQuestion="postQuestion"}}
 </div>
 
-{{#each model as |question|}}
+{{#each model.questions as |question|}}
   <h1>Question:{{#link-to 'question' question.id}}{{question.questionName}}{{/link-to}}-{{question.author}}</h1>
 {{delete-question question=question deleteQuestion="deleteQuestion"}}{{update-question question=question update="update"}}
 {{/each}}
-<br>
 <br>
