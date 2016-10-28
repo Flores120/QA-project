@@ -8,8 +8,8 @@ export default Ember.Component.extend({
       },
       update(question) {
         var params = {
-        question: this.get('question'),
-        questionDetails: this.get('questionDetails')
+        questionName: this.get('questionName'),
+        questionDetails: this.get('questionDetails'),
         };
         this.set('updateQuestionForm', false);
         this.sendAction('update', question, params);

@@ -1,9 +1,9 @@
 {{#if updateQuestionForm}}
-<h3>Update {{question.author}}</h3>
+<h3>Edit {{question.author}}</h3>
 <div>
   <form>
-    <label for="question">Question</label>
-    {{input value=question placeholder=question.question}}
+    <label for="questionName">Question</label>
+    {{input value=questionName id="questionName" placeholder=question.questionName}}
 
     <label for="questionDetails">Details</label>
     {{input value=questionDetails id="questionDestails" placeholder=question.questionDetails}}
