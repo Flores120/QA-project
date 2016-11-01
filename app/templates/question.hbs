@@ -1,4 +1,5 @@
-<p>Asked by{{model.author}}</p>
-{{question-detail question=model deleteQuestion="deleteQuestion"}}
+<div class="asked"><i><p>Asked by {{model.author}}</p></i></div>
+
+{{question-detail question=model deleteQuestion="deleteQuestion" deleteAnswer="deleteAnswer"}}
 
 {{new-answer postAnswer="postAnswer" question=model}}

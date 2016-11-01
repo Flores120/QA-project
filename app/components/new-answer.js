@@ -6,14 +6,14 @@ export default Ember.Component.extend({
       answerFormShow(){
         this.set('addNewAnswer', true);
       },
-      postAnswer(){
+      postAnswer() {
         var params = {
           author: this.get('author'),
           content: this.get('content'),
           question: this.get('question')
         };
-        this.set('addNewAnswer', false);
-        this.sendAction('postAnswer', params);
-      }
+      this.set('addNewAnswer', false);
+      this.sendAction('postAnswer', params);
+    }
   }
 });

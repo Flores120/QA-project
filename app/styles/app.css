@@ -1,3 +1,6 @@
+body {
+  font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
 header {
   text-align: center;
   color: white;
@@ -6,11 +9,25 @@ header {
   padding: 25px;
 }
 footer {
+  margin-top: 50px;
   text-align: center;
+}
+input{
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  width: 200px;
+
+}
+input:focus {
+  border: 3px solid #555;
+  outline: none;
 }
 .newQ {
   height: 100px;
-  background: lightgray;
   margin-bottom: 50px;
 }
 .newQ2{
@@ -22,17 +39,74 @@ footer {
   background-color: #5cd688;
 }
 .details {
-  /*border-top: 1px solid gray;*/
-  border-bottom: 1px solid lightgray;
+  margin-left: 20px;
   padding: 10px;
   margin-bottom: 10px;
 }
 .deleteB {
   position: relative; left: 75%; bottom: 10%;
   width: 20%;
-  height: 121px;
+  height: 50px;
   color: white;
   border: none;
   padding: 4px 4px;
   background-color: #e56767;
+}
+.deleteB2 {
+  width: 20%;
+  height: 50px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #e56767;
+}
+.deleteA {
+  width: 20%;
+  height: 30px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #e56767;
+}
+.editB{
+  width: 20%;
+  height: 50px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #68e4ed;
+}
+.question {
+  text-align: center;
+}
+.asked {
+  margin-left: 20px;
+}
+.postAn{
+  width: 10%;
+  height: 45px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
+.answer {
+  width: 100%;
+  height: 45px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
+.answerList{
+  list-style-type: none;
+  font-size: 16px;
+  margin: 40px;
+}
+.answerForm {
+  margin-left: 100px;
+}
+#detailsT {
+  font-size: 40px;
+  margin-left: 20px;
 }

@@ -1,16 +1,18 @@
 {{#if addNewAnswer}}
-<h1>Your answer</h1>
-  <div>
-    <form>
-      <label for="author">Author</label>
-        {{input value=author id="author"}}
+  <div class="answerForm">
+    <h1>Your answer</h1>
+      <div>
+        <form>
+          <label for="author">Author</label>
+          {{input value=author id="author"}}
 
-        <label for="content">Answer</label>
-        {{input value=content id="content"}}
+          <label for="content">Answer</label>
+          {{input value=content id="content"}}
 
-      <button {{action 'postAnswer'}}>Post</button>
-    </form>
-  </div>
+          <button class="postAn"{{action 'postAnswer'}}>Post</button>
+        </form>
+      </div>
+    </div>
 {{else}}
-  <button {{action 'answerFormShow'}}>Answer</button>
+  <button class="answer"{{action 'answerFormShow'}}>Answer</button>
 {{/if}}

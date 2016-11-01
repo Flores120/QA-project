@@ -1,13 +1,14 @@
-<strong>{{question.questionName}}</strong>
+<div id="detailsT">{{question.questionName}}</div>
 <hr>
 <div class="details">
   <em>{{question.questionDetails}}</em>
 </div>
+<hr>
 <button class="deleteB"{{action 'deleteQuestion' question}}>Delete</button>
-
- <h3>Comments</h3>
- <ul>
-   {{#each question.answers as |answer|}}
-  <li>{{answer-tile answer="answer"}}</li>
-  {{/each}}
-</ul>
+  <h1>Answers</h1>
+    {{#each question.answers as |answer|}}
+      <div class="answerList">
+        <li>{{answer.content}}  <i>-{{answer.author}}</i></li>
+        {{delete-answer answer=answer deleteAnswer="deleteAnswer"}}
+      </div>
+    {{/each}}
