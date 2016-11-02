@@ -5,7 +5,7 @@
 </div>
 <hr>
 <button class="deleteB"{{action 'deleteQuestion' question}}>Delete</button>
-  <h1>Answers</h1>
+    <div class="answer2"><h1>Answers</h1></div>
     {{#each question.answers as |answer|}}
       <div class="answerList">
         <li>{{answer.content}}  <i>-{{answer.author}}</i></li>

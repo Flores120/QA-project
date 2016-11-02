@@ -12,8 +12,8 @@ export default Ember.Component.extend({
           questionName: this.get('questionName'),
           questionDetails: this.get('questionDetails')
         };
-        this.set('addNewQuestion', false);
-        this.sendAction('postQuestion', params);
-      }
+      this.set('addNewQuestion', false);
+      this.sendAction('postQuestion', params);
+    }
   }
 });

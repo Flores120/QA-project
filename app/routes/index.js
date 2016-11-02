@@ -7,13 +7,13 @@ export default Ember.Route.extend({
       answers: this.store.findAll('answer')
     });
   },
-  actions:{
-    postQuestion(params){
-      var postQuestion = this.store.createRecord('question', params);
+    actions:{
+      postQuestion(params){
+        var postQuestion = this.store.createRecord('question', params);
         postQuestion.save();
         this.transitionTo('index');
       },
-    update(question, params) {
+      update(question, params) {
         Object.keys(params).forEach(function(key) {
           if(params[key]!==undefined) {
             question.set(key,params[key]);
@@ -22,7 +22,6 @@ export default Ember.Route.extend({
         question.save();
         this.transitionTo('index');
       },
-
       deleteQuestion(question) {
         question.destroyRecord();
         this.transitionTo('index');

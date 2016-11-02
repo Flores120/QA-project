@@ -31,8 +31,17 @@ input:focus {
   margin-bottom: 50px;
 }
 .newQ2{
+  position: relative; left: 40%;
   width: 20%;
   height: 100px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
+.postQ {
+  width: 15%;
+  height: 50px;
   color: white;
   border: none;
   padding: 4px 4px;
@@ -97,6 +106,9 @@ input:focus {
   border: none;
   padding: 4px 4px;
   background-color: #5cd688;
+}
+.answer2 {
+  margin-left: 35px;
 }
 .answerList{
   list-style-type: none;
