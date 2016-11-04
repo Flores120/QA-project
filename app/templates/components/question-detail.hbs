@@ -8,7 +8,7 @@
     <div class="answer2"><h1>Answers</h1></div>
     {{#each question.answers as |answer|}}
       <div class="answerList">
-        <li>{{answer.content}}  <i>-{{answer.author}}</i></li>
+        {{heading}}
         {{delete-answer answer=answer deleteAnswer="deleteAnswer"}}
       </div>
     {{/each}}
