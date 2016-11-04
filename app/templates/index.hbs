@@ -1,10 +1,18 @@
 <div class="newQ">
-{{new-question postQuestion="postQuestion"}}
+  {{new-question postQuestion="postQuestion"}}
 </div>
-<div class="question">
-  {{#each model.questions as |question|}}
-  <h1>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.questionName}}{{/link-to}}-{{question.author}}</h1>
-  {{delete-question question=question deleteQuestion="deleteQuestion"}}{{update-question question=question update="update"}}
-{{/each}}
+<div class="row">
+  <div class="col-sm-6">
+    <div class="question">
+      {{#each model.questions as |question|}}
+        <h1>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.questionName}}{{/link-to}}-{{question.author}}</h1>
+        {{delete-question question=question deleteQuestion="deleteQuestion"}}{{update-question question=question update="update"}}
+        <button {{action 'addFaveQ' question}}>Add</button>
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-sm-6">
+    {{my-question}}
+  </div>
 </div>
 <br>

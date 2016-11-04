@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  questionList: Ember.inject.service('fave-question'),
   model(){
     return Ember.RSVP.hash({
       questions: this.store.findAll('question'),
@@ -21,6 +22,10 @@ export default Ember.Route.extend({
         });
         question.save();
         this.transitionTo('index');
+      },
+      addFaveQ(question) {
+        this.get('questionList').add(question);
+        console.log(question);
       },
       deleteQuestion(question) {
         question.destroyRecord();
