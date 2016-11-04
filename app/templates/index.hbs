@@ -3,7 +3,7 @@
 </div>
 <div class="question">
   {{#each model.questions as |question|}}
-  <h1>{{#link-to 'question' question.id}}{{question.questionName}}{{/link-to}}-{{question.author}}</h1>
+  <h1>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.questionName}}{{/link-to}}-{{question.author}}</h1>
   {{delete-question question=question deleteQuestion="deleteQuestion"}}{{update-question question=question update="update"}}
 {{/each}}
 </div>
