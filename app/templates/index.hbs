@@ -5,13 +5,27 @@
   <div class="col-sm-6">
     <div class="question">
       {{#each model.questions as |question|}}
-        <h1>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.questionName}}{{/link-to}}-{{question.author}}</h1><button class="faveQ"{{action 'addFaveQ' question}}>Add</button>
-        {{delete-question question=question deleteQuestion="deleteQuestion"}}{{update-question question=question update="update"}}
+      <div class="questionDets">
+        <h1>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.questionName}}{{/link-to}}-{{question.author}}</h1>
+      </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <button class="faveQ"{{action 'addFaveQ' question}}>Add</button>
+          </div>
+          <div class="col-sm-3">
+            {{delete-question question=question deleteQuestion="deleteQuestion"}}
+          </div>
+          <div class="col-sm-3">
+            {{update-question question=question update="update"}}
+          </div>
+        </div>
       {{/each}}
     </div>
   </div>
   <div class="col-sm-6">
-    {{my-question}}
+    <div class="myQuestion">
+      {{my-question}}
   </div>
+</div>
 </div>
 <br>
