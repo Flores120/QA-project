@@ -87,8 +87,16 @@ img {
   padding: 4px 4px;
   background-color: #68e4ed;
 }
+.myQHeader {
+  color: #ff5b63;
+  font-size: 50px;
+}
 .questionDets {
-  margin-left: 50px;
+  border-top: 5px solid #e5bea0;
+}
+.postQHeader {
+  color: #ff5b63;
+  font-size: 50px;
 }
 .question {
   padding: 20px;

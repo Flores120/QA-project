@@ -1,4 +1,4 @@
-<h1>My Questions: {{totalQuestionCount}}</h1>
+<span class="myQHeader">My Questions: {{totalQuestionCount}}</span>
 {{#each questionList.questions as |question|}}
   <h2>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.questionName}}-{{question.author}}{{/link-to}}</h2>
   <button class="removeQ"{{action "removeQ" question}}>Remove</button>

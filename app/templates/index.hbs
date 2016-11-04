@@ -4,10 +4,10 @@
 <div class="row">
   <div class="col-sm-6">
     <div class="question">
+      <span class="postQHeader">Posted Questions</span>
       {{#each model.questions as |question|}}
       <div class="questionDets">
         <h1>{{question-popularity question}}{{#link-to 'question' question.id}}{{question.questionName}}{{/link-to}}-{{question.author}}</h1>
-      </div>
         <div class="row">
           <div class="col-sm-3">
             <button class="faveQ"{{action 'addFaveQ' question}}>Add</button>
@@ -19,6 +19,7 @@
             {{update-question question=question update="update"}}
           </div>
         </div>
+      </div>
       {{/each}}
     </div>
   </div>
