@@ -7,9 +7,10 @@ export default Ember.Component.extend({
     var QuestionCount =+ this.get('questionList.questions.length');
      return QuestionCount;
   }),
-    actions: {
-      removeQ(question){
-      this.get('questionList').remove(question)
+
+  actions: {
+    removeQ(question){
+    this.get('questionList').remove(question)
     }
   }
 });
