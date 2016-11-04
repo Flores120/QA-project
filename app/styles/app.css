@@ -92,6 +92,7 @@ img {
   font-size: 50px;
 }
 .questionDets {
+  margin-top: 5px;
   border-top: 5px solid #e5bea0;
 }
 .postQHeader {
@@ -151,6 +152,12 @@ img {
   border: none;
   padding: 4px 4px;
   background-color: #e56767;
+}
+.unansweredQ {
+  color: #4eba79;
+  font-style: italic;
+  font-weight:lighter;
+  font-size: 16px;
 }
 #detailsT {
   font-size: 40px;
