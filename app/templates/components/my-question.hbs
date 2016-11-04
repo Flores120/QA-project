@@ -2,5 +2,6 @@
 <h1>My Questions: {{totalQuestionCount}}</h1>
 {{#each questionList.questions as |question|}}
   {{#link-to 'question' question.id}}{{question.questionName}}-{{question.author}}{{/link-to}}
+  <button {{action "removeQ" question}}>Remove</button>
   <br>
 {{/each}}
