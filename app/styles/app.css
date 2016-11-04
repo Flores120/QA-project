@@ -121,6 +121,14 @@ img {
 .answerForm {
   margin-left: 100px;
 }
+.faveQ {
+  width: 20%;
+  height: 50px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
 #detailsT {
   font-size: 40px;
   margin-left: 20px;

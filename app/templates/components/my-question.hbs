@@ -1,3 +1,6 @@
+
+<h1>My Questions: {{totalQuestionCount}}</h1>
 {{#each questionList.questions as |question|}}
-  {{question.questionName}}-{{question.author}}
+  {{#link-to 'question' question.id}}{{question.questionName}}-{{question.author}}{{/link-to}}
+  <br>
 {{/each}}
